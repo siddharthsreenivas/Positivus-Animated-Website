@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("../textMarqueAnimation/3856NeueMachina.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "CustomFont", sans-serif;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+nav h1{
+    font-size: 40px;
+}
+nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 45px;
+}
+nav h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+nav button{
+    padding: 15px 25px;
+    font-family: "CustomFont", sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid #000;
+    cursor: pointer;
+    /* transition: all 0.5s;  */
+} 
+nav button:hover{
+    background-color:black;
+    color: white;
+    border: 1px solid #000;
+    transition: all 0.5s;
+    transform: translateX(-5px);
+    box-shadow: 4px 4px 0px #b8fa6a;
+}
+.center{
+    padding: 8px 70px;
+    /* height: 80%; */
+    width: 100%;
+    display: flex;
+}
+.center-part1{
+    height: 100%;
+    width: 50%;
+}
+.center-part1 h1{
+    line-height: 1.2;
+    font-size: 70px;
+}
+.center-part1 p{
+    font-size: 18px;
+    width: 95%;
+    margin: 20px 0
+}
+.center-part1 button{
+    background-color:black;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 18px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    font-family: "CustomFont", sans-serif;
+}
+.center-part1 button:hover{
+    color: #000;
+    transition: all 0.5s;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.center-part2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.center-part2 img{
+    height: 450px
+}
+.section-bottom{
+    padding: 70px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.section-bottom img{
+    height: 40px
+}
+.section2{
+    padding: 50px 70px;
+}
+.section2 .heading{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.section2 .heading h2{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #b8fa6a;
+    font-size: 30px;
+}
+.section2 .heading p{
+    width: 50%;
+}
+.section2 .cards{
+    /* padding: 0 50px; */
+    width: 100%;
+    /* height: 80%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.section2 .card{
+    width: 100%;
+    border: 3px solid #1f1f1f;
+    border-radius: 40px;
+    box-shadow: 0px 6px 0px #1f1f1f;
+    display: flex;
+    padding: 35px;
+    height: 260px;
+}
+.section2 .card .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section2 .card .left .title p{
+    background-color: #b8fa6a;
+    font-size: 30px;
+    padding: 0 4px;
+    border-radius: 5px;
+    width: max-content;
+}
+.section2 .card.black .left .title p{
+    background-color: #fff;
+}
+.section2 .card .left .learn-more{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.section2 .card.black .left .learn-more{color: #fff;}
+.section2 .card .left .learn-more i{
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    color: #b8fa6a;
+    padding: 3px;
+    font-size: 30px;
+}
+.section2 .card.black .left .learn-more i{
+    background-color: #fff;
+    color: #1f1f1f;
+}
+.section2 .card .right{
+    width: 50%;
+    display: flex;
+}
+.section2 .card .right img{
+    margin-left: 40px;
+    width: 70%;
+    /* height: 160px */
+}
+.section2 .card.black{
+    background-color: #1f1f1f;
+}
+.section3{
+    height: auto;
+    padding: 120px 70px 70px 70px;
+}
+.section3 .banner{
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 50px;
+    border-radius: 40px;
+    height: 60%;
+}
+.section3 .banner .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+}
+.section3 .banner .info h2{
+    font-size: 30px;
+}
+.section3 .banner .info button{
+    background-color:black;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 18px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    font-family: "CustomFont", sans-serif;
+    transition: all 0.5s;
+}
+.section3 .banner .info button:hover{
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.section3 .banner .logo{
+    width: 65%;
+    position: relative;
+}
+.section3 .banner .logo img{
+    position: absolute;
+    top: -90px;
+    right: 40px;
+}
+.section3 .heading{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 100px 0 ;
+}
+.section3 .heading h2{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #b8fa6a;
+    font-size: 30px;
+}
+.section3 .heading p{
+    width: 50%;
+}
+.section3 .case-study{
+    border-radius: 40px;
+    background-color: #1f1f1f;
+    padding: 60px 0px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section3 .case-study .group1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 50px;
+}
+.section3 .case-study .group1.line{
+    border-right: 1px solid #fff;
+}
+.section3 .case-study .group1 span{
+    color: #b8fa6a;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.section3 .case-study .group1 span i{
+    font-size: 30px;
+}
+footer{
+    height: auto;
+    padding: 0px 70px 90px 70px;
+}
+footer .mail{
+    border-radius: 40px;
+    background-color: #f3f3f3;
+    padding: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    /* font-family: "CustomFont", sans-serif;; */
+}
+footer .mail .form{
+    margin-left: 80px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .mail .form input,footer .mail .form textarea{
+    height: 40px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+footer .mail .form input::placeholder{
+    font-family: "CustomFont", sans-serif;
+}
+footer .mail .form textarea{
+    height: 100px;
+}
+footer .mail .form button{
+    background-color:black;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 25px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    font-family: "CustomFont", sans-serif;
+    transition: all 0.5s;
+}
+footer .mail .form button:hover{
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+footer .mail .img{
+    width: 40%;
+    position: relative;
+}
+footer .mail .img img{
+    width: 100%;
+    top: -25px;
+    left: 30%;
+    position: absolute;
+}
+
+.footer{
+    border-radius: 40px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 50px 80px;
+}
+.footer .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #fff;
+}
+.footer .contact .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer .contact .contact-info h3{
+    background-color: #b8fa6a;
+    padding: 7px;
+    width: max-content;
+    color: #000;
+    border-radius: 6px;
+}
+.footer .contact .contact-mail{
+    width: 65%;
+    background-color: #292a32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 60px 0px;
+}
+.footer .contact .contact-mail input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+}
+.footer .contact .contact-mail input::placeholder{
+    font-family:  "CustomFont", sans-serif;
+    color: #fff;
+}
+.footer .contact .contact-mail button{
+    background-color: #b8fa6a;
+    border: 1px solid #b8fa6a;
+    padding: 15px 25px;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer .terms{
+    padding-top: 40px;
+    display: flex;
+    gap: 50px;
+}
+.footer .terms p:last-of-type{
+    text-underline-offset: 2px;
+    text-decoration: underline;
+}
