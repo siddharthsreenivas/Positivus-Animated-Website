@@ -14,6 +14,19 @@ html {
 }
 body {
   font-family: "CustomFont", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#cursor{
+    width: 24px;
+    height: 24px;
+    background-color: #b8fa6a;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px #b7fa6ade;
+    position: fixed;
+    opacity: 0;
+    z-index: 99;
 }
 
 section{
@@ -32,6 +45,11 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+.part2 h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 nav h1{
     font-size: 40px;
@@ -92,7 +110,6 @@ nav button:hover{
     padding: 18px 35px;
     font-size: 18px;
     font-weight: 600;
-    border: none;
     font-family: "CustomFont", sans-serif;
 }
 .center-part1 button:hover{
@@ -180,6 +197,7 @@ nav button:hover{
     align-items: center;
     gap: 15px;
 }
+.section2 .card:hover{cursor: pointer}
 .section2 .card.black .left .learn-more{color: #fff;}
 .section2 .card .left .learn-more i{
     background-color: #1f1f1f;
@@ -234,15 +252,15 @@ nav button:hover{
     padding: 18px 35px;
     font-size: 18px;
     font-weight: 600;
-    border: none;
     font-family: "CustomFont", sans-serif;
-    transition: all 0.5s;
+
 }
 .section3 .banner .info button:hover{
     color: #000;
     background-color: transparent;
     border: 1px solid #000;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .section3 .banner .logo{
     width: 65%;
@@ -292,6 +310,10 @@ nav button:hover{
     align-items: center;
     gap: 20px;
 }
+.section3 .case-study .group1 span:hover{
+    cursor: pointer;
+    scale: 0.99;
+}
 .section3 .case-study .group1 span i{
     font-size: 30px;
 }
@@ -337,15 +359,13 @@ footer .mail .form button{
     padding: 25px 35px;
     font-size: 18px;
     font-weight: 600;
-    border: none;
     font-family: "CustomFont", sans-serif;
-    transition: all 0.5s;
 }
 footer .mail .form button:hover{
     color: #000;
     background-color: transparent;
-    border: 1px solid #000;
     cursor: pointer;
+    transition: all 0.5s;
 }
 footer .mail .img{
     width: 40%;
@@ -355,6 +375,7 @@ footer .mail .img img{
     width: 100%;
     top: -25px;
     left: 30%;
+    transform: rotate(180deg);
     position: absolute;
 }
 
@@ -370,7 +391,7 @@ footer .mail .img img{
     align-items: center;
     gap: 200px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
 }
 .footer .contact .contact-info{
     display: flex;
